@@ -1,0 +1,32 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+p {
+    color: rgb(49, 52, 54);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #feca57;
+    border-radius: 15px;
+    font-weight: 600; 
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 20px;
+    color: #000000;
+    border-radius: 15px;
+    margin: 25px;
+    float: left;
+}
+

@@ -1,0 +1,101 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #222f3e;
+	font-family: 'Raleway';
+	font-size: 16px;
+}
+
+.navegacion{
+	width: 100%;
+}
+
+.navegacion nav{
+	width: 90%;
+	max-width: 1100px;
+	background: #355C7D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	margin: 40px auto;
+}
+
+.navegacion nav ul{
+	list-style: none;
+	position: relative;
+}
+
+.navegacion nav > ul > li{
+	display: inline-block;
+}
+
+.navegacion nav > ul > li > a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 20px;
+}
+
+.navegacion nav > ul > li > a span{
+	font-size: 20px;
+	position: absolute;
+	bottom: -8px;
+	display: none;
+}
+
+.navegacion nav > ul > li:hover span{
+	display: block;
+}
+
+.navegacion nav ul li .submenu{
+	background: #355C7D;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+	padding: 20px;
+	position: absolute;
+	display: none;
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+}
+
+.navegacion nav ul li:hover .submenu{
+	display: flex;
+}
+
+.navegacion nav ul li .submenu .submenu-items{
+	margin: 0 20px;
+}
+
+.navegacion nav ul li .submenu .submenu-items p{
+	font-weight: 600;
+	width: 110px;
+	display: block;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #565656;
+	margin-bottom: 10px;
+}
+
+.navegacion nav ul li .submenu .submenu-items a{
+	color: #ffffff;
+	text-decoration: none;
+	margin: 6px 0;
+	display: block;
+}
+.presentacion{
+	text-align: center;
+	color:white;
+}
+
+h2 {
+	background-color: #6C5B7B;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 10px;
+	margin-left: 20%;
+	margin-right: 20%;
+}

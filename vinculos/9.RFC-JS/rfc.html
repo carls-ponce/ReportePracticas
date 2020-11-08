@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Generador RFC</title>
+</head>
+
+<body>
+    <script>
+    </script>
+    <section id="form">
+        <form method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label> Nombre</label><input type="text" name="nam" size="20"
+                    onkeypress="return letras(event)" /><br>
+                <label>Apellido paterno</label><input type="text" name="ape1" size="20"
+                    onkeypress="return letras(event)" /><br>
+                <label>Apellido materno</label><input type="text" name="ape2" size="20"
+                    onkeypress="return letras(event)" /><br>
+                <label>Fecha de nacimiento</label><input type="date" name="fech" /><br>
+                <label>RFC</label> <input type="text" name="txtRFC" maxlength="13" size="15" />
+                <br />
+
+                <input id="generar" type="submit" onClick="return valida()" value="Generar RFC" class="boton" />
+                <a href="index.html">Ir a home</a>
+            </fieldset>
+            <script type="text/javascript" src="javascript/script.js"></script>
+        </form>
+    </section>
+    <a href="../../index.html" target="_blank" rel="noopener noreferrer">Regresar a home</a>
+
+</body>
+
+</html>

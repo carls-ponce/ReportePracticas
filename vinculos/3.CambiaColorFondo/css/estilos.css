@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    padding: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ff6b6b;
+}
+
+p {
+    font-size: 30px;
+    color: aliceblue;
+    background-color: #0c2461;
+    padding: 18px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 20px;
+    color: #000000;
+    border-radius: 15px;
+    margin: 25px;
+    float: left;
+}
+
