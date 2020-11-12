@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Resistencias</title>
+    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Resistencias</h1>
+        <div class="radio">
+            <label>Cantidad de bandas</label> <br> <br>
+            <input type="radio" name="bandas" id="cuatro" checked onchange="check()">4 bandas   
+            <input type="radio" name="bandas" id="cinco" onchange="check()">5 bandas
+            <input type="radio" name="bandas" id="seis" onchange="check()">6 bandas 
+        </div>
+        <hr>
+        <div class="contenedor">
+            <h3>Parámetros de la resistencia</h3> 
+            <label for="sel1">1.<sup>a</sup> banda de color</label> <br>
+            <select id="sel1" onchange="cambia_color1(this);">
+                <option>Seleccione un Color</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+        </div>
+        <div class="contenedor">
+            <label for="sel2">2.<sup>a</sup> banda de color</label> <br>
+            <select id="sel2" onchange="cambia_color2(this);">
+                <option>Seleccione un Color</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+        </div>
+        <div class="contenedor">
+            <label for="sel5">3.<sup>a</sup> banda de color</label> <br>
+            <select id="sel5" onchange="cambia_color5(this);" disabled>
+                <option>Seleccione un Color</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+        </div>
+        <div class="contenedor">
+            <label for="sel6">4.<sup>a</sup> banda de color</label> <br>
+            <select id="sel6" onchange="cambia_color6(this);" disabled>
+                <option>Seleccione un Color</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+        </div>
+        <div class="contenedor">
+            <label for="sel3">Multiplicador</label> <br>
+            <select id="sel3" onchange="cambia_color3(this);">
+                <option>Seleccione un Color</option>
+                <option value=0>Black</option>
+                <option value=1>Brown</option>
+                <option value=2>Red</option>
+                <option value=3>Orange</option>
+                <option value=4>Yellow</option>
+                <option value=5>Green</option>
+                <option value=6>Blue</option>
+                <option value=7>Violet</option>
+                <option value=8>Grey</option>
+                <option value=9>White</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+        </div>
+        <div class="contenedor">
+            <label for="sel4">Tolerancia</label> <br>
+            <select id="sel4" onchange="cambia_color4(this);">
+                <option>Seleccione un Color</option>
+                <option value=10>Gold</option>
+                <option value=11>Silver</option>
+            </select>
+        </div> 
+        <br>
+        <button id="generar" onclick="calcular()">Generar Cálculo</button>
+        <button id="limpiar" onclick="reset()">Limpiar Campos</button>
+        
+        <div class="solucion">
+            <h3>Salida</h3>
+            <p id="respuesta"></p>
+        </div>
+
+        <button id="return"><a href="../../index.html" target="_blank" rel="noopener noreferrer">Regresar a Home</a></button>
+    </div>
+</body>
+</html>
