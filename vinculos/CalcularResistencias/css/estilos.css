@@ -1,0 +1,132 @@
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #d1ccc0;
+}
+h1 {
+    text-align: center;
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C6426E, #642B73); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 10px;
+    color: #f5f6fa;
+    border-radius: 10px;
+}
+.radio {
+    font-size: 22px;
+    padding: 15px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+}
+.radio input{
+    cursor: pointer;
+    width: 30px;
+}
+
+.contenedor {
+    padding-left: 35px;
+}
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+#generar {
+    font-size: 15px;
+    margin-left: 35px;
+    color: #f5f6fa;
+    border-radius: 10px;
+    border-style: none;
+    padding: 8px;
+    cursor: pointer;
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C6426E, #642B73); 
+}
+#limpiar {
+    margin-left: 8%;
+    font-size: 15px;
+    color: #f5f6fa;
+    border-radius: 10px;
+    border-style: none;
+    padding: 8px;
+    cursor:pointer;
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C6426E, #642B73); 
+}
+#return{
+  
+    font-size: 15px;
+    border-radius: 10px;
+    border-style: none;
+    padding: 8px;
+    cursor:pointer;
+    background: #642B73;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #C6426E, #642B73);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #C6426E, #642B73); 
+    float: right;
+    margin-top: 30%;
+}
+#return a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+.solucion p{
+    font-size: 25px;
+}
+.solucion {
+    margin-left: 36%;
+    margin-top: -30%;
+}
+select {
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+select option {
+    margin: 40px;
+    color: #fff;
+}
+select option[value="0"]{
+    background: Black;
+}
+select option[value="1"] {
+    background: brown;
+}
+select option[value="2"] {
+    background:red;
+}
+select option[value="3"] {
+    background:orange;
+}
+select option[value="4"] {
+    color:black;
+    background: yellow;
+}
+select option[value="5"] {
+    background: green;
+}
+select option[value="6"] {
+    background:blue;
+}
+select option[value="7"] {
+    background:violet;
+}
+select option[value="8"] {
+    background: grey;
+    color:black;
+}
+select option[value="9"] {
+    color:black;
+    background: white;
+}
+select option[value="10"] {
+    background:gold;
+    color:black;
+}
+select option[value="11"] {
+    background:silver;
+    color:black;
+}
